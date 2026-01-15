@@ -1,0 +1,47 @@
+/* Estilos globales para Vuetify */
+
+/* Asegurar que v-app ocupe toda la pantalla */
+.v-application {
+  min-height: 100vh;
+}
+
+/* Mejorar el espaciado del main */
+.v-main {
+  min-height: calc(100vh - 64px - 36px); /* altura header - altura footer */
+  background-color: #f5f5f5;
+}
+
+/* Ajustar padding del container en diferentes tamaños */
+.v-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Mejorar la responsividad de las cards */
+.v-card {
+  height: 100%;
+}
+
+/* Ajustar el app-bar para que sea más prominente */
+.v-app-bar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Footer fijo en la parte inferior */
+.v-footer {
+  margin-top: auto;
+}
+
+/* Mejorar el espaciado en pantallas pequeñas */
+@media (max-width: 600px) {
+  .v-container {
+    padding: 12px;
+  }
+}
+
+/* Optimizar para pantallas grandes */
+@media (min-width: 1920px) {
+  .v-container {
+    padding: 32px;
+  }
+}
